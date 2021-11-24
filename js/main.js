@@ -16,3 +16,21 @@ $(function(){
         });
     },5000);
 });
+
+
+// theater/special.html
+$(function(){
+    $('.st-slide li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.btn-slide-right').click(function(){
+        $('.st-slide').animate({
+            'margin-right': '-270px'
+        },1000,function(){
+            $('.st-slide li').eq(0).appendTo('.st-slide');
+            $('.st-slide').css({marginLeft: 0});
+        })
+    })
+});
