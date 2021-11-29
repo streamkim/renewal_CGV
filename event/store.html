@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGV | 스토어</title>
     <link rel="shortcut icon" href="../main-img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="event.css">
-    <script src="../js/jquery-3.6.0.slim.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="../js/jquery-1.12.4.js"></script>
     <script src="../js/main.js"></script>
 </head>
 <body>
@@ -33,33 +33,33 @@
             </div>
             <nav class="nav">
                 <ul class="mainmenu">
-                    <li><a href="#">영화</a>
+                    <li><a href="../movie/index.html">영화</a>
                         <ul class="submenu">
-                            <li><a href="#">무비차트</a></li>
-                            <li><a href="#">HD트레일러</a></li>
-                            <li><a href="#">무비파인더</a></li>
-                            <li><a href="#">CGV아트하우스</a></li>
+                            <li><a href="../movie/index.html">무비차트</a></li>
+                            <li><a href="../movie/trailer.html">HD트레일러</a></li>
+                            <li><a href="../movie/finder.html">무비파인더</a></li>
+                            <li><a href="../movie/arthouse.html">CGV아트하우스</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">예매</a>
+                    <li><a href="../ticket/index.html">예매</a>
                         <ul class="submenu">
-                            <li><a href="#">빠른예매</a></li>
-                            <li><a href="#">상영시간표</a></li>
+                            <li><a href="../ticket/index.html">빠른예매</a></li>
+                            <li><a href="../ticket/showtime.html">상영시간표</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><img src="../main-img/logo.png"></a></li>
-                    <li><a href="#">극장</a>
+                    <li><a href="../index.html"><img src="../main-img/logo.png"></a></li>
+                    <li><a href="../theater/index.html">극장</a>
                         <ul class="submenu">
-                            <li><a href="#">CGV극장</a></li>
-                            <li><a href="#">특별관</a></li>
-                            <li><a href="#">Club서비스</a></li>
+                            <li><a href="../theater/index.html">CGV극장</a></li>
+                            <li><a href="../theater/special.html">특별관</a></li>
+                            <li><a href="../theater/club.html">Club서비스</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">이벤트</a>
+                    <li><a href="index.html">이벤트</a>
                         <ul class="submenu">
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">기프트샵</a></li>
-                            <li><a href="#">매거진</a></li>
+                            <li><a href="index.html">이벤트</a></li>
+                            <li><a href="store.html">기프트샵</a></li>
+                            <li><a href="magazine.html">매거진</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -67,8 +67,17 @@
         </div>
     </header>
 
-    <!-- container는 가제입니다 이 부분 지운 후에 코드 작성해주셔유 -->
-    <div class="container"></div>
+    <div id="bg_subnav">
+        <ul class="subnav">
+            <li class="home"><a href="../index.html"><img src="../main-img/home.png"></a></li>
+            <li><a href="index.html"><span><img src="../main-img/ico_next.png"></span>이벤트</a></li>
+            <li><a href="store.html"><span><img src="../main-img/ico_next.png"></span>기프트샵</a></li>
+        </ul>
+    </div>
+
+    <div class="const">
+        <img src="../main-img/const.png" alt="">
+    </div>
 
     <!-- footer -->
     <div id="ad_bg">
@@ -80,27 +89,19 @@
         <div class="footer">
             <div class="footer1">
                 <ul>
-                    <a href="#">
-                        <li>회사소개</li>
-                    </a>
-                    <a href="#">
-                        <li>이용약관</li>
-                    </a>
-                    <a href="#">
-                        <li>개인정보처리방침</li>
-                    </a>
-                    <a href="#">
-                        <li>서비스이용안내</li>
-                    </a>
+                    <a href="#"><li>회사소개</li></a>
+                    <a href="#"><li>이용약관</li></a>
+                    <a href="#"><li>개인정보처리방침</li></a>
+                    <a href="#"><li>서비스이용안내</li></a>
                 </ul>
             </div>
             <div class="sns">
                 <ul>
-                    <li><a href="#"><img src="../main-img/facebook.png"></a></li>
-                    <li><a href="#"><img src="../main-img/twitter.png"></a></li>
-                    <li><a href="#"><img src="../main-img/instagram.png"></a></li>
+                    <li><a href="https://www.facebook.com/CJCGV" target="_blank"><img src="../main-img/facebook.png"></a></li>
+                    <li><a href="https://twitter.com/cj_cgv" target="_blank"><img src="../main-img/twitter.png"></a></li>
+                    <li><a href="https://www.instagram.com/cgv_korea/" target="_blank"><img src="../main-img/instagram.png"></a></li>
                 </ul>
-                <select class="f-site">
+                <select class="f-site" onchange="if(this.value) window.open(this.value);">
                     <option value>패밀리사이트</option>
                     <optgroup label="CJ그룹">
                         <option value="http://cj.net/">CJ주식회사</option>
@@ -133,11 +134,11 @@
             <br>
             <div class="footer2">
                 <div class="flogo">
-                    <a href="#"><img src="../main-img/flogo.png" alt="flogo"></a>
+                    <a href="../index.html"><img src="../main-img/flogo.png" alt="flogo"></a>
                 </div>
                 <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
-                <p>대표이사 : 허민회 | 사업자등록번호 : 104-81-45690 | 통신판매업신고번호 : 2017-서울용산-0662<a href="#">사업자정보확인</a></p>
-                <p>호스팅사업자 : CJ올리브네트웍스 | 개인정보보호책임자 : 심준범 | 대표이메일 : cjcgvmaster@cj.netCGV | 고객센터 : 1544-1122</p>
+                <p>대표이사 : 허민회  |  사업자등록번호 : 104-81-45690  |  통신판매업신고번호 : 2017-서울용산-0662<a href="#">사업자정보확인</a></p>
+                <p>호스팅사업자 : CJ올리브네트웍스  |  개인정보보호책임자 : 심준범  |  대표이메일 : cjcgvmaster@cj.netCGV  |  고객센터 : 1544-1122</p>
             </div>
         </div>
     </footer>

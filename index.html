@@ -7,10 +7,22 @@
     <title>영화 그 이상의 감동. CGV</title>
     <link rel="shortcut icon" href="main-img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
-    <script src="js/jquery-3.6.0.slim.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
+    <!-- popup -->
+    <div id="popup">
+        <div id="close"><img src="main-img/close.png" alt=""></div>
+        <div class="content">
+            <img src="main-img/main-popup.png" alt="">
+            <img src="main-img/main-popup2.jpg" alt="">
+        </div>
+        <input type="checkbox" class="checkbox">
+        <label for="checkbox" class="checkbox_txt">하루동안 보지 않기</label>
+    </div>
+
+    <!-- 헤더AD -->
     <div class="h_adbg">
         <div class="h_ad">
             <img src="main-img/ad.jpg" alt="header ad">
@@ -32,33 +44,33 @@
             </div>
             <nav class="nav">
                 <ul class="mainmenu">
-                    <li><a href="#">영화</a>
+                    <li><a href="movie/index.html">영화</a>
                         <ul class="submenu">
-                            <li><a href="#">무비차트</a></li>
-                            <li><a href="#">HD트레일러</a></li>
-                            <li><a href="#">무비파인더</a></li>
-                            <li><a href="#">CGV아트하우스</a></li>
+                            <li><a href="movie/index.html">무비차트</a></li>
+                            <li><a href="movie/trailer.html">HD트레일러</a></li>
+                            <li><a href="movie/finder.html">무비파인더</a></li>
+                            <li><a href="movie/arthouse.html">CGV아트하우스</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">예매</a>
+                    <li><a href="ticket/index.html">예매</a>
                         <ul class="submenu">
-                            <li><a href="#">빠른예매</a></li>
-                            <li><a href="#">상영시간표</a></li>
+                            <li><a href="ticket/index.html">빠른예매</a></li>
+                            <li><a href="ticket/showtime.html">상영시간표</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><img src="main-img/logo.png"></a></li>
-                    <li><a href="#">극장</a>
+                    <li><a href="index.html"><img src="main-img/logo.png"></a></li>
+                    <li><a href="theater/index.html">극장</a>
                         <ul class="submenu">
-                            <li><a href="#">CGV극장</a></li>
-                            <li><a href="#">특별관</a></li>
-                            <li><a href="#">Club서비스</a></li>
+                            <li><a href="theater/index.html">CGV극장</a></li>
+                            <li><a href="theater/special.html">특별관</a></li>
+                            <li><a href="theater/club.html">Club서비스</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">이벤트</a>
+                    <li><a href="event/index.html">이벤트</a>
                         <ul class="submenu">
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">기프트샵</a></li>
-                            <li><a href="#">매거진</a></li>
+                            <li><a href="event/index.html">이벤트</a></li>
+                            <li><a href="event/store.html">기프트샵</a></li>
+                            <li><a href="event/magazine.html">매거진</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -71,11 +83,13 @@
                 <img src="main-img/light.png" alt="">
             </div>
             <h2><img src="main-img/title_hero.png" alt=""></h2>
-            <ul class="hero-imgs">
-                <li><a href="#"><img src="main-img/hero2.jpg" alt=""></a></li>
-                <li><a href="#"><img src="main-img/hero1.jpg" alt=""></a></li>
-                <li><a href="#"><img src="main-img/hero3.jpg" alt=""></a></li>
-            </ul>
+            <div class="hero-imgs-wrap">
+                <ul class="hero-imgs">
+                    <li><a href="movie/boxoffice_detail2.html"><span><img src="main-img/2.png" alt=""></span><img src="main-img/hero2.jpg" alt=""></a></li>
+                    <li><a href="movie/boxoffice_detail1.html"><span><img src="main-img/1.png" alt=""></span><img src="main-img/hero1.jpg" alt=""></a></li>
+                    <li><a href="movie/boxoffice_detail3.html"><span><img src="main-img/3.png" alt=""></span><img src="main-img/hero3.jpg" alt=""></a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="bg_ticket">
@@ -93,7 +107,7 @@
             <div class="event-imgs">
                 <ul class="event-imgs-left">
                     <li><a href="#"><img src="main-img/event1.png" alt=""></a></li>
-                    <li><a href="#"><img src="main-img/event2.png" alt=""></a></li>
+                    <li><a href="event/evt_recommend_detail.html"><img src="main-img/event2.png" alt=""></a></li>
                     <li><a href="#"><img src="main-img/event3.png" alt=""></a></li>
                     <li><a href="#"><img src="main-img/event4.png" alt=""></a></li>
                 </ul>
@@ -103,19 +117,19 @@
             </div>
         </div>
         <ul id="event_nav">
-            <li><a href="#">
+            <li><a href="theater/club.html">
                 <img src="main-img/enb1.png" alt="">
                 <p>멤버십/Club</p>
             </a></li>
-            <li><a href="#">
+            <li><a href="event/evt_discount.html">
                 <img src="main-img/enb2.png" alt="">
                 <p>제휴/할인</p>
             </a></li>
-            <li><a href="#">
+            <li><a href="event/store.html">
                 <img src="main-img/enb3.png" alt="">
                 <p>스토어</p>
             </a></li>
-            <li><a href="#">
+            <li><a href="theater/special.html">
                 <img src="main-img/enb4.png" alt="">
                 <p>특별관</p>
             </a></li>
@@ -124,10 +138,10 @@
             <div class="comingsoon">
                 <h2><img src="main-img/title_comingsoon.png" alt=""></h2>
                 <ul class="comingsoon-imgs">
-                    <li><a href="#"><span><img src="main-img/tape.png" alt=""></span><img src="main-img/comingsoon1.png" alt=""></a></li>
-                    <li><a href="#"><span><img src="main-img/tape.png" alt=""></span><img src="main-img/comingsoon2.png" alt=""></a></li>
-                    <li><a href="#"><span><img src="main-img/tape.png" alt=""></span><img src="main-img/comingsoon3.png" alt=""></a></li>
-                    <li><a href="#"><span><img src="main-img/tape.png" alt=""></span><img src="main-img/comingsoon4.png" alt=""></a></li>
+                    <li><a href="#"><span><img src="main-img/tape.png" alt=""></span><img src="main-img/comingsoon1.jpg" alt=""><img class="cms_h" src="main-img/comingsoon1_h.png" alt=""></a></li>
+                    <li><a href="movie/coming_detail.html"><span><img src="main-img/tape.png" alt=""></span><img src="main-img/comingsoon2.png" alt=""><img class="cms_h" src="main-img/comingsoon2_h.png" alt=""></a></li>
+                    <li><a href="#"><span><img src="main-img/tape.png" alt=""></span><img src="main-img/comingsoon3.png" alt=""><img class="cms_h" src="main-img/comingsoon3_h.png" alt=""></a></li>
+                    <li><a href="#"><span><img src="main-img/tape.png" alt=""></span><img src="main-img/comingsoon4.jpg" alt=""><img class="cms_h" src="main-img/comingsoon4_h.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -178,11 +192,11 @@
             </div>
             <div class="sns">
                 <ul>
-                    <li><a href="#"><img src="main-img/facebook.png"></a></li>
-                    <li><a href="#"><img src="main-img/twitter.png"></a></li>
-                    <li><a href="#"><img src="main-img/instagram.png"></a></li>
+                    <li><a href="https://www.facebook.com/CJCGV" target="_blank"><img src="main-img/facebook.png"></a></li>
+                    <li><a href="https://twitter.com/cj_cgv" target="_blank"><img src="main-img/twitter.png"></a></li>
+                    <li><a href="https://www.instagram.com/cgv_korea/" target="_blank"><img src="main-img/instagram.png"></a></li>
                 </ul>
-                <select class="f-site">
+                <select class="f-site" onchange="if(this.value) window.open(this.value);">
                     <option value>패밀리사이트</option>
                     <optgroup label="CJ그룹">
                         <option value="http://cj.net/">CJ주식회사</option>
@@ -215,7 +229,7 @@
             <br>
             <div class="footer2">
                 <div class="flogo">
-                    <a href="#"><img src="main-img/flogo.png" alt="flogo"></a>
+                    <a href="index.html"><img src="main-img/flogo.png" alt="flogo"></a>
                 </div>
                 <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
                 <p>대표이사 : 허민회  |  사업자등록번호 : 104-81-45690  |  통신판매업신고번호 : 2017-서울용산-0662<a href="#">사업자정보확인</a></p>

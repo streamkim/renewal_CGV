@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGV | 이벤트</title>
+    <title>CGV 이벤트</title>
     <link rel="shortcut icon" href="../main-img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="event.css">
-    <script src="../js/jquery-3.6.0.slim.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="../js/jquery-1.12.4.js"></script>
     <script src="../js/main.js"></script>
 </head>
+
 <body>
     <!-- header -->
     <div class="h_adbg">
@@ -33,33 +35,33 @@
             </div>
             <nav class="nav">
                 <ul class="mainmenu">
-                    <li><a href="#">영화</a>
+                    <li><a href="../movie/index.html">영화</a>
                         <ul class="submenu">
-                            <li><a href="#">무비차트</a></li>
-                            <li><a href="#">HD트레일러</a></li>
-                            <li><a href="#">무비파인더</a></li>
-                            <li><a href="#">CGV아트하우스</a></li>
+                            <li><a href="../movie/index.html">무비차트</a></li>
+                            <li><a href="../movie/trailer.html">HD트레일러</a></li>
+                            <li><a href="../movie/finder.html">무비파인더</a></li>
+                            <li><a href="../movie/arthouse.html">CGV아트하우스</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">예매</a>
+                    <li><a href="../ticket/index.html">예매</a>
                         <ul class="submenu">
-                            <li><a href="#">빠른예매</a></li>
-                            <li><a href="#">상영시간표</a></li>
+                            <li><a href="../ticket/index.html">빠른예매</a></li>
+                            <li><a href="../ticket/showtime.html">상영시간표</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><img src="../main-img/logo.png"></a></li>
-                    <li><a href="#">극장</a>
+                    <li><a href="../index.html"><img src="../main-img/logo.png"></a></li>
+                    <li><a href="../theater/index.html">극장</a>
                         <ul class="submenu">
-                            <li><a href="#">CGV극장</a></li>
-                            <li><a href="#">특별관</a></li>
-                            <li><a href="#">Club서비스</a></li>
+                            <li><a href="../theater/index.html">CGV극장</a></li>
+                            <li><a href="../theater/special.html">특별관</a></li>
+                            <li><a href="../theater/club.html">Club서비스</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">이벤트</a>
+                    <li><a href="index.html">이벤트</a>
                         <ul class="submenu">
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">기프트샵</a></li>
-                            <li><a href="#">매거진</a></li>
+                            <li><a href="index.html">이벤트</a></li>
+                            <li><a href="store.html">기프트샵</a></li>
+                            <li><a href="magazine.html">매거진</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -67,40 +69,172 @@
         </div>
     </header>
 
-    <!-- container는 가제입니다 이 부분 지운 후에 코드 작성해주셔유 -->
-    <div class="container"></div>
+    <div id="bg_subnav">
+        <ul class="subnav">
+            <li class="home"><a href="../index.html"><img src="../main-img/home.png"></a></li>
+            <li><a href="index.html"><span><img src="../main-img/ico_next.png"></span>이벤트</a></li>
+        </ul>
+    </div>
+
+    <!-- contents -->
+    <div class="wrap">
+        <div id="content">
+            <div class="title">
+                <img src="event-img/title_event.png" alt="">
+            </div>
+            <div class="slide_title">
+                <img src="event-img/recommend_evt.png" alt="">
+            </div>
+            <div class="slide_wrap">
+                <div class="slide">
+                    <ul class="slide-imgs">
+                        <li><a href="#"><img src="event-img/recommend1.jpg" alt="slide_img"></a></li>
+                        <li><a href="#"><img src="event-img/recommend2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="event-img/recommend3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="event-img/recommend4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="event-img/recommend5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="event-img/recommend6.jpg" alt=""></a></li>
+                    </ul>
+                    <img src="event-img/btn1.png" class="btn1" alt="">
+                    <img src="event-img/btn2.png" class="btn2" alt="">
+                </div>
+            </div>
+            
+            <div id="title1">
+                <img src="event-img/cgv_special.png" alt="">
+                <div class="seemore"><a href="evt_special.html">+더보기</a></div>
+            </div>
+            <section class="wrap1">
+                <div class="box1">
+                    <img src="event-img/special1.jpg" alt="">
+                    <p class="txt1">수험생 청소년을 위한 [스피드 무비 파이터]</p>        
+                    <p class="txt2">2021.11.17~2021.12.20</p>    
+                </div>
+                <div class="box2">
+                    <img src="event-img/special2.jpg" alt="">
+                    <p class="txt1">CGV VIP EXPRESS</p>
+                    <p class="txt2">2021.09.01~2022.01.31</p>
+                </div>
+                <div class="box3">
+                    <img src="event-img/special3.jpg" alt="">
+                    <p class="txt1">[엔칸토:마법의 세계] CGV 필름마크</p>
+                    <p class="txt2">2021.11.17~2021.12.19</p>
+                </div>
+                <div class="box4">
+                    <img src="event-img/special4.jpg" alt="">
+                    <p class="txt1">[연애 빠진 로맨스] CGV필름마크</p>
+                    <p class="txt2">2021.11.17~2021.12.19</p>
+                </div>
+            </section>
+
+            <div id="title1">
+                <img src="event-img/movie.png" alt="">
+                <div class="seemore"><a href="evt_movie.html">+더보기</a></div>
+            </div>
+            <section class="wrap1">
+                <div class="box1">
+                    <img src="event-img/movie1.jpg" alt="">
+                    <p class="txt1">[이터널스] 개봉작 사용설명서</p>
+                    <p class="txt2">2021.10.29~2021.11.28</p>
+                </div>
+                <div class="box2">
+                    <img src="event-img/movie2.jpg" alt="">
+                    <p class="txt1">[유체이탈자] 무대인사</p>
+                    <p class="txt2">2021.11.23~2021.11.27</p>
+                </div>
+                <div class="box3">
+                    <img src="event-img/movie3.jpg" alt="">
+                    <p class="txt1">[너에게 가는 길] 라이브러리톡</p>
+                    <p class="txt2">2021.11.22~2021.11.28</p>
+                </div>
+                <div class="box4">
+                    <img src="event-img/movie4.jpg" alt="">
+                    <p class="txt1">TO1이 추천하는 [고스터버스터즈 라이즈]</p>
+                    <p class="txt2">2021.11.19~2021.12.28</p>
+                </div>
+            </section>
+
+            <div id="title1">
+                <img src="event-img/theater.png" alt="">
+                <div class="seemore"><a href="evt_theater.html">+더보기</a></div>
+            </div>
+            <section class="wrap1">
+                <div class="box1">
+                    <img src="event-img/theater1.jpg" alt="">
+                    <p class="txt1">[Kep1er X CGV] 스페셜 데뷔 프로모션!</p>
+                    <p class="txt2">2021.11.22~2021.12.31</p>
+                </div>
+                <div class="box2">
+                    <img src="event-img/theater2.jpg" alt="">
+                    <p class="txt1">CGV대구스타디움 스무디킹 겨울맞이 이벤트</p>
+                    <p class="txt2">2021.11.22~2021.12.15</p>
+                </div>
+                <div class="box3">
+                    <img src="event-img/theater3.jpg" alt="">
+                    <p class="txt1">CGV고양행신 씨네샵 굿즈 최대 77% 할인</p>
+                    <p class="txt2">2021.11.22~2021.12.31</p>
+                </div>
+                <div class="box4">
+                    <img src="event-img/theater4.jpg" alt="">
+                    <p class="txt1">CGV전주에코시티 GRAND OPEN</p>
+                    <p class="txt2">2021.11.19~2021.12.16</p>
+                </div>
+            </section>
+
+            <div id="title1">
+                <img src="event-img/discount.png" alt="">
+                <div class="seemore"><a href="evt_discount.html">+더보기</a></div>
+            </div>
+            <section class="wrap1">
+                <div class="box1">
+                    <img src="event-img/discount1.jpg" alt="">
+                    <p class="txt1">아시아나 마일리지로 IMAX 예매도 된다!!</p>
+                    <p class="txt2">2021.06.24~2021.12.31</p>
+                </div>
+                <div class="box2">
+                    <img src="event-img/discount2.jpg" alt="">
+                    <p class="txt1">TOSS로 예매하고 2천원 할인받기!</p>
+                    <p class="txt2">2021.11.01~2021.11.30</p>
+                </div>
+                <div class="box3">
+                    <img src="event-img/discount3.jpg" alt="">
+                    <p class="txt1">2천원 할인쿠폰 받고 스마일페이로 예매하기!</p>
+                    <p class="txt2">2021.11.01~2021.11.30</p>
+                </div>
+                <div class="box4">
+                    <img src="event-img/discount4.jpg" alt="">
+                    <p class="txt1">모바일문화상품권 CGV에서 사용하는 방법!</p>
+                </div>
+            </section>
+            <div class="top_btn">
+                <a href="#"><img src="event-img/top_bnt.png" alt="top_btn"></a>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <div id="ad_bg">
         <div class="ad-img">
-            <img src="../main-img/ad.png" alt="">
+            <img src="../../main-img/ad.png" alt="">
         </div>
     </div>
     <footer id="footer_bg">
         <div class="footer">
             <div class="footer1">
                 <ul>
-                    <a href="#">
-                        <li>회사소개</li>
-                    </a>
-                    <a href="#">
-                        <li>이용약관</li>
-                    </a>
-                    <a href="#">
-                        <li>개인정보처리방침</li>
-                    </a>
-                    <a href="#">
-                        <li>서비스이용안내</li>
-                    </a>
+                    <a href="#"><li>회사소개</li></a>
+                    <a href="#"><li>이용약관</li></a>
+                    <a href="#"><li>개인정보처리방침</li></a>
+                    <a href="#"><li>서비스이용안내</li></a>
                 </ul>
             </div>
             <div class="sns">
                 <ul>
-                    <li><a href="#"><img src="../main-img/facebook.png"></a></li>
-                    <li><a href="#"><img src="../main-img/twitter.png"></a></li>
-                    <li><a href="#"><img src="../main-img/instagram.png"></a></li>
+                    <li><a href="https://www.facebook.com/CJCGV" target="_blank"><img src="../main-img/facebook.png"></a></li>
+                    <li><a href="https://twitter.com/cj_cgv" target="_blank"><img src="../main-img/twitter.png"></a></li>
+                    <li><a href="https://www.instagram.com/cgv_korea/" target="_blank"><img src="../main-img/instagram.png"></a></li>
                 </ul>
-                <select class="f-site">
+                <select class="f-site" onchange="if(this.value) window.open(this.value);">
                     <option value>패밀리사이트</option>
                     <optgroup label="CJ그룹">
                         <option value="http://cj.net/">CJ주식회사</option>
@@ -133,13 +267,14 @@
             <br>
             <div class="footer2">
                 <div class="flogo">
-                    <a href="#"><img src="../main-img/flogo.png" alt="flogo"></a>
+                    <a href="../index.html"><img src="../main-img/flogo.png" alt="flogo"></a>
                 </div>
                 <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
-                <p>대표이사 : 허민회 | 사업자등록번호 : 104-81-45690 | 통신판매업신고번호 : 2017-서울용산-0662<a href="#">사업자정보확인</a></p>
-                <p>호스팅사업자 : CJ올리브네트웍스 | 개인정보보호책임자 : 심준범 | 대표이메일 : cjcgvmaster@cj.netCGV | 고객센터 : 1544-1122</p>
+                <p>대표이사 : 허민회  |  사업자등록번호 : 104-81-45690  |  통신판매업신고번호 : 2017-서울용산-0662<a href="#">사업자정보확인</a></p>
+                <p>호스팅사업자 : CJ올리브네트웍스  |  개인정보보호책임자 : 심준범  |  대표이메일 : cjcgvmaster@cj.netCGV  |  고객센터 : 1544-1122</p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
